@@ -1,0 +1,22 @@
+name: Send feedback or suggest a feature
+description: Share an idea or tell us how Cuebook works for you.
+title: "[Feedback] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feedback is public. Please leave out personal information and private scripts or projects.
+        For something that is not working, please use the bug-report form instead.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback or suggestion
+      description: What would you like to tell us?
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: How would you use it?
+      description: If you are suggesting a feature, describe where it would help in your rehearsals or shows.

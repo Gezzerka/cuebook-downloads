@@ -1,0 +1,53 @@
+name: Report a bug
+description: Tell us about something that is not working in Cuebook.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports are public. Please leave out personal information and private scripts or projects.
+        Check existing reports first in case someone has already reported the same problem.
+  - type: input
+    id: version
+    attributes:
+      label: Cuebook version
+      description: Click the Cuebook logo to find the version.
+      placeholder: "For example, 1.0.4"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Your computer
+      options:
+        - Windows
+        - Mac with Apple Silicon
+        - Mac with an Intel processor
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Windows or macOS version
+      placeholder: "For example, Windows 11 or macOS 15"
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we reproduce it?
+      description: List the steps that lead to the problem. If it only happens sometimes, please say so.
+      placeholder: "1. Open a script..."
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Add any error message or a screenshot, if helpful. Remove private information before uploading.
